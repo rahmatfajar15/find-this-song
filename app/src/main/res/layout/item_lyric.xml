@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="?listPreferredItemPaddingLeft"
+    android:paddingRight="?listPreferredItemPaddingRight"
+    android:paddingStart="?android:listPreferredItemPaddingStart"
+    android:paddingEnd="?android:listPreferredItemPaddingEnd"
+    android:layout_gravity="top|center"
+    >
+
+    <TextView
+        android:id="@+id/text_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/primary_text_light"
+        android:text="@string/empty"
+        android:maxLines="1"
+        android:maxEms="20"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/text_item_lyric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/empty"
+        android:maxLines="3"
+        android:maxEms="24"
+        android:maxLength="180"
+        android:textColorHighlight="@color/yellow_500"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="@android:color/primary_text_light"
+        />
+
+</LinearLayout>

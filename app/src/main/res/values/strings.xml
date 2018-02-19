@@ -1,0 +1,28 @@
+<resources>
+    <string name="empty">Text is empty.</string>
+    <string name="app_name">Find This Song</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="time_format">Running Time: %.9f s</string>
+    <string name="item_count_format">Items Count: %d</string>
+
+    <string name="how_to_use">
+        1. Beri izin aplikasi untuk memakai microphone.
+        \n2. Tekan tombol lup, lalu pilih icon teks jika ingin mencari dengan input teks.
+        \n3. Jika ingin mencari dengan menggunakan suara, tekan tombol lup lalu tekan tombol mic.
+        \n4. Durasi timeout speech recognition adalah 6 detik.
+        \n5. Jika ingin mengembalikan list ke posisi semula, tekan tombol reset di toolbar.
+    </string>
+
+    <!--<string name="lorem_ipsum">
+    Castus orexis hic desideriums torquis est. \nSunt fluctuses talem dexter, nobilis bromiumes. \nClemens idoleum callide examinares particula est. \nUbi est grandis apolloniates? \nFlavum tatas ducunt ad torus. \n \nCum triticum velum, omnes ionicis tormentoes visum teres, dexter decores. \nUbi est mirabilis devirginato? \n \nValebat primus humani generis est. \nUbi est azureus galatae? \nVae, fortis fuga! \nBrabeutas accelerare in domesticus rugensis civitas! \nRectors potus in fidelis aetheres! \nCrescere acceleratrix ducunt ad fortis adgium. \nLumens observare in raptus sala!
+    Castus orexis hic desideriums torquis est. \nSunt fluctuses talem dexter, nobilis bromiumes. \nClemens idoleum callide examinares particula est. \nUbi est grandis apolloniates? \nFlavum tatas ducunt ad torus. \n \nCum triticum velum, omnes ionicis tormentoes visum teres, dexter decores. \nUbi est mirabilis devirginato? \n \nValebat primus humani generis est. \nUbi est azureus galatae? \nVae, fortis fuga! \nBrabeutas accelerare in domesticus rugensis civitas! \nRectors potus in fidelis aetheres! \nCrescere acceleratrix ducunt ad fortis adgium. \nLumens observare in raptus sala!
+    Castus orexis hic desideriums torquis est. \nSunt fluctuses talem dexter, nobilis bromiumes. \nClemens idoleum callide examinares particula est. \nUbi est grandis apolloniates? \nFlavum tatas ducunt ad torus. \n \nCum triticum velum, omnes ionicis tormentoes visum teres, dexter decores. \nUbi est mirabilis devirginato? \n \nValebat primus humani generis est. \nUbi est azureus galatae? \nVae, fortis fuga! \nBrabeutas accelerare in domesticus rugensis civitas! \nRectors potus in fidelis aetheres! \nCrescere acceleratrix ducunt ad fortis adgium. \nLumens observare in raptus sala!
+    Castus orexis hic desideriums torquis est. \nSunt fluctuses talem dexter, nobilis bromiumes. \nClemens idoleum callide examinares particula est. \nUbi est grandis apolloniates? \nFlavum tatas ducunt ad torus. \n \nCum triticum velum, omnes ionicis tormentoes visum teres, dexter decores. \nUbi est mirabilis devirginato? \n \nValebat primus humani generis est. \nUbi est azureus galatae? \nVae, fortis fuga! \nBrabeutas accelerare in domesticus rugensis civitas! \nRectors potus in fidelis aetheres! \nCrescere acceleratrix ducunt ad fortis adgium. \nLumens observare in raptus sala!
+    Castus orexis hic desideriums torquis est. \nSunt fluctuses talem dexter, nobilis bromiumes. \nClemens idoleum callide examinares particula est. \nUbi est grandis apolloniates? \nFlavum tatas ducunt ad torus. \n \nCum triticum velum, omnes ionicis tormentoes visum teres, dexter decores. \nUbi est mirabilis devirginato? \n \nValebat primus humani generis est. \nUbi est azureus galatae? \nVae, fortis fuga! \nBrabeutas accelerare in domesticus rugensis civitas! \nRectors potus in fidelis aetheres! \nCrescere acceleratrix ducunt ad fortis adgium. \nLumens observare in raptus sala!
+    </string>-->
+</resources>
