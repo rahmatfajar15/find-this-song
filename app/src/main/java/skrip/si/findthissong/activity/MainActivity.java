@@ -109,8 +109,8 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
 
         // Setup ViewPager Adapter
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(mRaita, "Raita Algorithm");
         adapter.addFragment(mReverseColussi, "Reverse Colussi Algorithm");
+        adapter.addFragment(mRaita, "Raita Algorithm");
         mViewPager.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPager);
 
