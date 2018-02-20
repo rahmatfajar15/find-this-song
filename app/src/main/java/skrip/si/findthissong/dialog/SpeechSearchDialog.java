@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Locale;
 
 import skrip.si.findthissong.R;
-import skrip.si.findthissong.helper.Constant;
+import skrip.si.findthissong.Constant;
 
 public class SpeechSearchDialog extends AppCompatActivity {
 

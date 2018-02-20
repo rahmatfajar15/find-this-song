@@ -40,16 +40,14 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringJoiner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 import skrip.si.findthissong.R;
 import skrip.si.findthissong.algorithm.RaitaAlgorithm;
 import skrip.si.findthissong.algorithm.ReverseColussiAlgorithm;
 import skrip.si.findthissong.dialog.SpeechSearchDialog;
-import skrip.si.findthissong.helper.Constant;
+import skrip.si.findthissong.Constant;
 import skrip.si.findthissong.dialog.TextSearchDialog;
 import skrip.si.findthissong.fragment.PlaceholderFragment;
 import skrip.si.findthissong.model.LyricModel;
@@ -58,7 +56,7 @@ import static java.lang.Math.min;
 
 public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener, View.OnClickListener {
 
-    private static final int MAX_PATTERN = 5;
+    private static final int MAX_PATTERN = 40;
 
     FloatingActionMenu mFam;
     FloatingActionButton mFabSpeechSearch;
@@ -284,17 +282,20 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
         Double tDelta = 0.0;
         Long tStart, tEnd;
 
-        // from https://stackoverflow.com/questions/8519669/replace-non-ascii-character-from-string#comment19241180_8519863
-        final String regex = "[^\\x20-\\x7E]";
+//        final String regex = "[^\\x20-\\x7E]";
+        final String regexNonAlphabet = "[^\\x20-\\x7E]";
+        final String regexMultipleSpace = "( ){2,99}";
         final String replacement = " ";
 
-        pattern = pattern.replaceAll(regex, replacement);
+        pattern = pattern.replaceAll(regexNonAlphabet, replacement);
+        pattern = pattern.replaceAll(regexMultipleSpace, "");
         pattern = pattern.toLowerCase();
 
         for (String item :
                 mLyricList) {
-            item = item.replaceAll(regex, replacement);
-            item = item.toLowerCase();
+            item = item.replaceAll(regexNonAlphabet, replacement);
+            item = item.replaceAll(regexMultipleSpace, "");
+            item = item.trim().toLowerCase();
             convertedLyric.add(item);
         }
 
@@ -312,7 +313,7 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
                     index++;
                 }
                 tEnd = System.nanoTime();
-                tDelta = (tEnd - tStart) / 1E9;  // 1E9 = 10^9 = 1 000 000 000 (which is milliseconds)
+                tDelta = (tEnd - tStart) / 1E9;  // 1E9 = 10^9 = 1 000 000 000 (get value as seconds)
 
                 raitaIndexResult = indexResult;
                 break;
@@ -329,7 +330,7 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
                     index++;
                 }
                 tEnd = System.nanoTime();
-                tDelta = (tEnd - tStart) / 1E9;  // 1E9 = 10^9 = 1 000 000 000 (which is milliseconds)
+                tDelta = (tEnd - tStart) / 1E9;  // 1E9 = 10^9 = 1 000 000 000 (get value as seconds)
 
                 reverseColussiIndexResult = indexResult;
                 break;

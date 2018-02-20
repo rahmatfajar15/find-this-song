@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import skrip.si.findthissong.R;
-import skrip.si.findthissong.helper.Constant;
+import skrip.si.findthissong.Constant;
 
 public class LyricActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package skrip.si.findthissong.helper;
+package skrip.si.findthissong;
 
 /**
  * Define all static variable

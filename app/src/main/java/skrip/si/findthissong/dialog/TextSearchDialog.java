@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import skrip.si.findthissong.R;
-import skrip.si.findthissong.helper.Constant;
+import skrip.si.findthissong.Constant;
 
 public class TextSearchDialog extends AppCompatActivity {
 
